@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Menu Content</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        h1{
+            padding: 20px;
+            background-color: coral;
+            width: 100%;
+            text-shadow: 2px 2px 2px red, -2px -2px 2px blue;
+            box-shadow: 10px 10px 10px, -10px -10px 10px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a href="#" class="navbar-brand">NTH</a>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="nav navbar-nav">
+              <li class="nav-item">
+                  <a href="#home_content" class="nav-link active" data-toggle="pill">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#services_content" class="nav-link" data-toggle="pill">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#contact_content" class="nav-link" data-toggle="pill">Contact</a>
+              </li>
+          </ul>
+      </div> <!-- id collapsibleNavbar div -->
+  </nav>
+
+   <div class="tab-content">
+       <div id="home_content" class="container tab-pane active"
+            style="background-color: yellow;min-height: 200px;">
+           <h1>Welcome to Narayana Tech House</h1>
+           <h5>We are providing Python related Training</h5>
+       </div>
+
+
+       <div id="services_content" class="container tab-pane"
+             style="background-color: darkcyan;min-height: 200px;">
+           <h5>We are providing so many services</h5>
+           <h4>Available Languages are :</h4>
+           <ul>
+               <li>Python</li>
+               <li>Java</li>
+               <li>C</li>
+           </ul>
+           <h4>Available Database are :</h4>
+           <ul>
+               <li>MySQL DB</li>
+               <li>Oracle DB</li>
+               <li>SQL Server DB</li>
+           </ul>
+       </div>
+
+        <div id="contact_content" class="container tab-pane"
+            style="background-color: sandybrown;min-height: 200px;">
+           <h1>Adreess:</h1>
+            <address>
+                <h2>Narayana Tech House</h2>
+                <h6>Flat No: 303,<br>
+                    Nagasai Nivas, Opp.Balaji Towers,<br>
+                    Prime Hospital Line, <br>
+                    Ameerpet<br>
+                </h6>
+                <h5 style="color: red;">For more information contact :</h5>
+                <h4>+91-9010607010 <br>
+                    +91- XXXXXXX</h4>
+            </address>
+       </div>
+   </div>
+</body>
+</html>

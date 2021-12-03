@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information</title>
+</head>
+<body>
+    Enter Student Marks : <input type="text" id="myid">
+    <button type="button" onclick="myFunction()">Submit</button>
+
+     <h2 id="demo"> </h2>
+     <h2 id="demo2"> </h2>
+
+   <script>
+     function myFunction(){
+       var marks = document.getElementById("myid").value;
+       if (marks.length==0){
+          document.getElementById("demo").innerHTML="Please enter any marks";
+          document.getElementById("demo").style.color="red";
+          document.getElementById("demo2").innerHTML="";
+       }
+
+       else if(marks < 0 || marks > 100 ){
+          document.getElementById("demo").innerHTML = "Please enter valid marks";
+          document.getElementById("demo").style.color="red";
+          document.getElementById("demo2").innerHTML="";
+       }
+       else if(isNaN(marks)){
+           document.getElementById("demo").innerHTML = "Please enter only digits(0-100)";
+           document.getElementById("demo").style.color="red";
+           document.getElementById("demo2").innerHTML="";
+       }
+       else if(marks < 35){
+           document.getElementById("demo").innerHTML = "Sorry, Student Failed.";
+           document.getElementById("demo").style.color="red";
+           document.getElementById("demo2").innerHTML="Student marks are :"+marks;
+
+       }
+       else if(marks < 60){
+           document.getElementById("demo").innerHTML = "Congrats, Student passed with second grade";
+           document.getElementById("demo").style.color="blue";
+           document.getElementById("demo2").innerHTML="Student marks are :"+marks;
+       }
+       else {
+         document.getElementById("demo").innerHTML = "Congrats, Student passed with first grade";
+         document.getElementById("demo").style.color="green";
+         document.getElementById("demo2").innerHTML="your marks are :"+marks
+       }
+     }
+   </script>
+</body>
+</html>

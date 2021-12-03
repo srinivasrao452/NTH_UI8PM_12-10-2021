@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MenuBar Information</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body{
+            margin-top: 100px;
+        }
+        .card{
+            margin-bottom: 100px;
+        }
+        .offer{
+            background-color: cyan;
+        }
+        .expire{
+            color: red;
+        }
+        footer{
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+
+    <script src="../js/Article.js"> </script>
+</head>
+<body>
+
+<header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="../images/NTH_Logo.jpeg" style="width: 100px;height: 50px">
+          </a>
+
+          <button type="button" class="navbar-toggler" data-toggle="collapse"
+                  data-target="#navbarToggle">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarToggle">
+             <!-- navbar left menus -->
+              <div class="navbar-nav mr-auto">
+                 <a href="#" class="nav-item nav-link">
+<!--                     <i class="fas fa-home"></i>-->
+                     Home
+                 </a>
+                 <a href="#" class="nav-item nav-link">About</a>
+                 <a href="#" class="nav-item nav-link">Contact</a>
+              </div> <!-- navbar left menus -->
+
+                <!-- navbar right menus -->
+              <div class="navbar-nav">
+                 <a href="#" class="nav-item nav-link">Profile</a>
+                 <a href="#" class="nav-item nav-link">Register</a>
+                 <a href="#" class="nav-item nav-link">Login</a>
+              </div> <!-- navbar right menus -->
+          </div> <!-- navbarToggle menu section -->
+
+        </div> <!-- main container -->
+      </nav>
+</header>
+
+<main>
+    <div class="container">
+        <h1 class="text-center">Welcome to ZOMATO Store</h1>
+        <h5 class="text-center">Here you are going to get quality food items from different Restaurants. </h5>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+               <div class="card">
+                   <div class="card-header">
+                       <div class="row">
+                           <div class="col-md-6">
+                               <h4>KFC Burger</h4>
+                           </div>
+                       </div> <!-- row from card-header -->
+                   </div> <!-- card -header div -->
+                   
+                   <div class="card-body">
+                       <img src="../images/burger.jpg" class="img-fluid"
+                            style="width: 100%; margin-bottom: 20px;">
+                       <h5>Price : Rs400</h5>
+
+                       <marquee behavior="alternate" scrollamount="10"
+                                style="background-color: yellow">20% OFF ON YOUR PURCHAGE</marquee>
+
+                        <p>Use offer code : <span class="offer">EXTRA20</span></p>
+                        <p>Expire date : <span class="expire">25, november 2021</span> </p>
+
+                        <form method="post">
+                            <h5><label>Enter a offer code:</label></h5>
+                            <input type="text" class="form-control" id="offerCode"
+                                   style="margin-bottom: 20px">
+                            <button type="button" class="form-control btn-info"
+                                    onclick="validateOfferCode()">Apply Code</button>
+
+                            <p id="demo"> </p>
+                            <p id="demo2"> </p>
+                            <p id="demo3"> </p>
+                            <p id="demo4"> </p>
+
+                            <button type="button" class="btn btn-primary form-control">Buy Now</button>
+                        </form>
+                   </div> <!-- card-body -->
+                   
+               </div> <!-- card div -->
+            </div>
+            <div class="col-md-3"></div>
+        </div><!-- container row -->
+
+    </div><!-- body container -->
+</main>
+
+<footer>
+    Copy rights &copy; NTH Oraganization
+</footer>
+</body>
+</html>

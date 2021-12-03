@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        body *{
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        $(document).ready(function (){
+           // $("p").siblings().css({"color":"red","border" : "2px solid blue"})
+           // $("p").next().css({"color":"red","border" : "2px solid blue"})
+           // $("p").nextAll().css({"color":"red","border" : "2px solid blue"})
+           // $("p").nextUntil("h6").css({"color":"red","border" : "2px solid blue"})
+           // $("p").nextAll("h3").css({"color":"red","border" : "2px solid blue"})
+
+            // $("h2").eq(1).css({"color":"red","border" : "2px solid blue"})
+            // $("h2").filter(".myclass").css({"color":"red","border" : "2px solid blue"})
+            // $("h2").not(".myclass").css({"color":"red","border" : "2px solid blue"})
+            $("h2").has("b").css({"color":"red","border" : "2px solid blue"})
+        });
+    </script>
+</head>
+<body>
+    <h1>Outer h1</h1>
+    <div> this is div
+        <h1> Hello H1</h1>
+        <h2 class="myclass"> Hello
+            <b>H2</b>
+        </h2>
+        <h3> Hello H3</h3>
+        <h4> Hello H4</h4>
+
+        <p> Hello p</p>
+
+        <h2> Hello H2</h2>
+        <h3> Hello H3</h3>
+        <h6>Hello h6</h6>
+        <h2> Welcome</h2>
+
+    </div>
+
+</body>
+</html>

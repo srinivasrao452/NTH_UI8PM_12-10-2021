@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic methods</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function (){
+           // $("#btn1").click(function (){
+           //    $("p").before("<b>Append text</b>")
+           // });
+           // $("#btn2").click(function (){
+           //    $("ol").before("<li>Append item</li>")
+           // });
+
+            $("#btn1").click(function (){
+                $("#div1").remove();
+            });
+
+            $("#btn2").click(function (){
+                $("#div2").empty();
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+ <button id="btn1"> Remove Tags</button>
+ <button id="btn2"> Empty Tags</button>
+ <br><br><br>
+
+<div id="div1" style="background-color: yellow; padding: 100px">
+    <h1> hello </h1>
+    <b> NTH </b>
+</div>
+
+<br><br><br>
+
+<div id="div2" style="background-color: cyan; padding: 100px">
+    <h1> hello </h1>
+    <b> NTH </b>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+body{
+    margin-top: 100px;
+}
+#nth_logo{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+footer{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.col2{
+    margin: 40px;
+}
+
+#container2,#container3{
+    background-color: lightgray;
+    min-height: 400px;
+    min-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 80px;
+}
+
+#container3{
+    background-color: lightblue;
+}
+
+#container3_h2,#form_btn{
+    margin: 50px;
+}
+
+
+#container2_h3{
+    margin-left: 20px;
+}
+
+.id_card_img{
+    height: 50px;
+    width: 50px;
+}
+
+.id_card_para{
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.col-md-4-row{
+    background-color: bisque;
+    padding: 30px;
+    margin: 20px;
+}

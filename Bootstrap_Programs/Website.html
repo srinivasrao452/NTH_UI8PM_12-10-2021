@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>NTH Organization</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="../css/Website.css">
+
+</head>
+<body>
+   <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+          <div class="container">
+              <a class="navbar-brand" id="brand_logo">
+                  <img src="../images/NTH_Logo.jpeg" id="nth_logo">
+              </a>
+
+              <button type="button" class="navbar-toggler"
+                      data-target="#navbarToggle" data-toggle="collapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarToggle">
+                  <!-- Left side menus -->
+                  <div class="navbar-nav mr-auto">
+                     <a href="#" class="nav-item nav-link text-white">Home</a>
+                     <a href="#" class="nav-item nav-link text-white">About</a>
+                 </div>
+
+                  <!-- Right side menus -->
+                  <div class="navbar-nav">
+                     <a href="#container1" class="nav-item nav-link text-white">Container1</a>
+                     <a href="#container2" class="nav-item nav-link text-white">Container2</a>
+                     <a href="#container3" class="nav-item nav-link text-white">Container3</a>
+                 </div>
+              </div> <!-- navbarToggle id div-->
+          </div>
+      </nav>
+   </header>
+
+   <div class="container-fluid" id="container1">
+       <div class="row">
+           <div class="col-md-6">
+               <img src="../images/NTH_Logo.jpeg" class="img-fluid">
+           </div> <!-- column1 from row1-->
+
+           <div class="col-md-6">
+               <div class="col2">
+                   <h1>IT training institute for Job Seekers</h1>
+               </div>
+               <h3 class="col2"> Smart learners will get quickly Jobs </h3>
+               <h4 class="col2">We build efficient remote engineering teams that
+                   are managed directly by you </h4>
+           </div> <!-- column2 from row1-->
+       </div> <!-- container1 row 1-->
+   </div> <!-- container1 div-->
+
+   <div class="container-fluid" id="container2">
+      <div class="row">
+          <h1>Building great teams is hard, so we make it easy</h1>
+      </div> <!-- row1 div-->
+
+      <div class="row">
+          <div class="col-md-4">
+              <div class="row col-md-4-row">
+                  <div class="col-md-2" >
+                     <img src="../images/id-card.png" class="id_card_img" >
+                  </div>
+
+                  <div class="col-md-10">
+                      <h3 class="container2_h3" style="margin-left: 30px"> Python</h3>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <p class="id_card_para">
+                     Python is a Powerful , general purpose, dynamic, high-level, and interpreted
+programming languag
+                  </p>
+              </div>
+          </div> <!-- row2 column1-->
+
+           <div class="col-md-4">
+              <div class="row col-md-4-row">
+                  <div class="col-md-2" >
+                     <img src="../images/id-card.png" class="id_card_img" >
+                  </div>
+
+                  <div class="col-md-10">
+                      <h3 class="container2_h3" style="margin-left: 30px"> Django</h3>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <p class="id_card_para">
+                      Django is a WebFramework of Python language which is used to    create Web Applications.
+    Django contains the Tons of packages.
+                  </p>
+              </div>
+          </div> <!-- row2 column2-->
+
+            <div class="col-md-4">
+              <div class="row col-md-4-row">
+                  <div class="col-md-2" >
+                     <img src="../images/id-card.png" class="id_card_img" >
+                  </div>
+
+                  <div class="col-md-10">
+                      <h3 class="container2_h3" style="margin-left: 30px">RESTAPI</h3>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <p class="id_card_para">
+                      Rest API provides so many advntages automatically. It reduces the lot of burden on
+                      Developer or Programer while developing the APIs for app to app communication.
+                  </p>
+              </div>
+          </div> <!-- row2 column3-->
+      </div> <!-- row2 div-->
+   </div> <!-- container2 div-->
+
+
+
+   <div class="container-fluid" id="container3">
+      <div class="row">
+          <div class="col-md-6">
+              <img src="../images/europe-buildings_new.jpg" class="img-fluid">
+          </div>
+          
+          <div class="col-md-6">
+              <div class="row">
+                  <h2 id="container3_h2">Get a form for Register</h2>
+              </div>
+
+              <div class="row">
+                  <button type="button" class="btn btn-primary" id="form_btn"
+                          data-toggle="modal" data-target="#myModal">
+                      Register Now
+                  </button>
+
+                  <!-- modal form concept -->
+                  <div class="modal" id="myModal">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+
+                              <div class="modal-header">
+                                 <h4 class="modal-title">
+                                     Please Register here to get more information
+                                 </h4>
+                                 <button type="button" class="close"
+                                         data-dismiss="modal">&times;</button>
+                              </div> <!-- modal-header div -->
+
+                              <div class="modal-body">
+                                  <form method="post" action="#">
+                                      <div class="form-group">
+                                          <label class="control-label">E-mail address:</label>
+                                          <input type="email" name="email" class="form-control" placeholder="Enter your email">
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label class="control-label">Username:</label>
+                                          <input type="text" name="uname" class="form-control" placeholder="Enter your username">
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label class="control-label">Password:</label>
+                                          <input type="password" name="pwd1" class="form-control" placeholder="Enter your Password">
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label class="control-label">Conform Password:</label>
+                                          <input type="password" name="pwd2" class="form-control" placeholder="Confirm Password">
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label class="control-label">Description:</label>
+                                          <textarea name="discription" class="form-control" placeholder="Enter your discription"></textarea>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <input type="submit"  class="form-control btn btn-success" value="Register">
+                                      </div>
+                                  </form>
+                              </div> <!-- modal-body -->
+
+                              <!-- modal-footer -->
+                              <div class="modal-footer">
+                                 <button type="button" class="form-control btn btn-danger"
+                                         data-dismiss="modal">Close</button>
+                              </div> <!-- modal-footer -->
+
+                          </div> <!-- modal-content -->
+                      </div> <!-- modal-dialog div -->
+                  </div> <!-- id myModal  div-->
+
+              </div>
+          </div>
+      </div>
+   </div> <!-- container3 div-->
+
+   <footer>
+       Copyrights © 2021
+       <a href="https://www.youtube.com/channel/UCi41s4fUxhwQyNvwDMMoHJQ/playlists">
+           NTH Organization</a>. All rights reserved.
+   </footer>
+
+</body>
+</html>

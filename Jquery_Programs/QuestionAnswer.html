@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Javascript example</title>
+  <meta charset="utf-8">
+  <script      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+     $(document).ready(function(){
+        $("#question").click(function(){
+            $(".answer").slideToggle("slow");
+        });
+
+       $("#question2").click(function(){
+            $(".answer2").slideToggle(2000);
+       });
+    });
+ </script>
+
+  <style>
+    .answer,.answer2, #question,#question2 {
+        padding: 5px;
+        /*text-align: center;*/
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+    }
+
+    .answer,.answer2 {
+        padding: 20px;
+    }
+ </style>
+
+
+</head>
+
+<body>
+  <h4 id="question">What is difference between remove() and discard() methods?</h4>
+
+  <div class="answer" style="display: none;">
+    <p><b>remove()</b> and <b>discard()</b> methods both are working in set concepts.</p>
+
+       <p><b>remove()</b> will remove given element from the given set object if element            available.
+           If element not available it returns an exception. </p>
+
+       <p><b>discard()</b> will remove given element from the given set object if element            available.
+           If element not available it doesn't returns any exception.</p>
+  </div>
+
+
+   <h4 id="question2">What is difference between index() and find() methods?</h4>
+
+   <div class="answer2" style="display: none;">
+       <p><b>index()</b> and <b>find()</b> methods both are working in Python string           concepts.</p>
+
+       <p><b>index()</b> will return given element index value of the given string object            if element available.
+           If element not available it returns an exception like <b>ValueError: substring            not found.</b> </p>
+
+       <p><b>find()</b> will return given element index value of the given string object            if element available.
+           If element not available then it doesn't returns any exception and it returns           <b>-1</b> value </p>
+
+    </div>
+</body>
+</html>
+

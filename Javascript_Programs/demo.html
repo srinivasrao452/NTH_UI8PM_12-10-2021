@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+   <h1>Cleck below button to get response:</h1>
+
+   <button type="button"
+           onclick="document.getElementById('demo').innerHTML=Date()">
+                                                      Click Me for Time</button>
+
+   <h2 id="demo"> </h2>
+   <br><br><hr>
+
+   <button type="button" onclick="this.innerHTML=Date()">Click Me for Time</button>
+    <br><br><hr>
+
+   <button type="button" onmouseover="displayTime()" onclick="applyColor()">Click Me for Time</button>
+   <h2 id="demo2"> </h2>
+
+   <br><br><hr>
+   <button type="button" id="btn4">Click Me</button>
+
+
+   <script>
+      document.getElementById("btn4").addEventListener("click",displayTime);
+      document.getElementById("btn4").addEventListener("keydown", applyColor);
+
+      function displayTime(){
+          document.getElementById("demo2").innerHTML=Date();
+          document.getElementById("demo2").style.color="blue";
+      }
+      function applyColor(){
+          document.getElementById("demo2").style.backgroundColor="yellow";
+          document.getElementById("demo2").style.fontSize="50px";
+      }
+   </script>
+
+</body>
+</html>

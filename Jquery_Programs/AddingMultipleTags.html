@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        x = 0;
+        function afterImageText(){
+            while (x < 1){
+               x ++;
+               var txt1 = "<b> I </b>";  // create a html element
+               var txt2 = $("<i> </i>").text("Love"); // creating with jquery
+               var txt3 = document.createElement("b"); // create with dom
+               txt3.innerHTML = "UI";  // adding content to <b> tag
+
+               $("img").after(txt1,txt2,txt3); // insert the new elements after the <img>
+            }
+        }
+    </script>
+</head>
+<body>
+   <img src="../images/id-card.png" alt="id_card">
+   <h3>click the bellow button to insert text after the image.</h3>
+   <button type="button" onclick="afterImageText()"> Insert Text</button>
+</body>
+</html>

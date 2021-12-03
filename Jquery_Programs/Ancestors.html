@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+       body *{
+           border: 2px solid red;
+           padding: 10px;
+           margin: 30px;
+       }
+    </style>
+
+    <script>
+        $(document).ready(function (){
+            // $("span").parent().css({"border":"2px solid blue","color": "blue"})
+            // $("span").parents().css({"border":"2px solid blue","color": "blue"})
+            // $("span").parentsUntil().css({"border":"2px solid blue","color": "blue"})
+            // $("span").parentsUntil("div").css({"border":"2px solid blue","color": "blue"})
+
+            // $("div").children().css({"border":"2px solid cyan","color": "brown"})
+            // $("div").children("h1:last").css({"border":"2px solid cyan","color": "brown"})
+            // $("div").children(".first").css({"border":"2px solid cyan","color": "brown"})
+
+            // $("div").find("*").css({"border":"2px solid cyan","color": "brown"})
+            // $("div").find("b").css({"border":"2px solid cyan","color": "brown"})
+        })
+    </script>
+</head>
+<body> this is body tag
+    <div class="mydiv"> div tag
+        <h1 class="first">This is h1 tag</h1>
+        <h1>This is another h1 tag</h1>
+        <ol class="first"> ol tag
+            <li> li tag
+                <span> Span tag</span>
+            </li>
+            <li> li tag
+                <b>Bold tag</b>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

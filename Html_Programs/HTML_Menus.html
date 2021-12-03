@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Menus</title>
+    <style>
+        body{
+            background: url("../images/hotel_img1.jpg") no-repeat;
+            background-size: cover;
+        }
+        ul{
+            margin: 0;
+            padding:0;
+            list-style-type: none;
+        }
+        ul li{
+            background-color: black;
+            /*color: white;*/
+            float: left;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        ul li:hover{
+            background-color: green;
+        }
+
+        ul li ul li{
+            display: none;
+            position: relative;
+        }
+
+        ul li:hover ul li{
+            display: block;
+        }
+
+        ul li ul li ul {
+            position: absolute;
+            left: 200px;
+            top:0px;
+            display: none;
+        }
+
+        ul li ul li:hover ul{
+            display: block;
+        }
+
+
+
+    </style>
+</head>
+<body>
+   <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">Services</a>
+            <ul>
+                <li><a href="#">Python</a> </li>
+                <li><a href="#">Django</a> </li>
+                <li><a href="#">REST API</a>
+                    <ul>
+                        <li><a href="#">Fast Track</a></li>
+                        <li><a href="#">Normal Track</a></li>
+                    </ul>
+                </li>
+            </ul>
+       </li>
+
+       <li><a href="#">About US</a></li>
+   </ul>
+</body>
+</html>

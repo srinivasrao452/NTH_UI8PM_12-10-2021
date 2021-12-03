@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Two Numbers</title>
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+        main,h1{
+            text-align: center;
+        }
+        #add_sum{
+            font-size: 50px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+      <h1>Addition of Two Numbers :</h1>
+      <main>
+          <input type="text" id="num_one"> + <input type="text" id="num_two">
+          <h1 id="add_sum"> </h1>
+      </main>
+
+   <script>
+       var numOne = document.getElementById("num_one");
+       var numTwo = document.getElementById("num_two");
+       var addSum = document.getElementById("add_sum");
+
+       numOne.addEventListener("input", add);
+       numTwo.addEventListener("input", add);
+
+       function add(){
+           var first_number = parseFloat(numOne.value||0);
+           var second_number = parseFloat(numTwo.value||0);
+
+           addSum.innerHTML = "The Sum of two numbers is : "+(first_number+second_number);
+       }
+
+   </script>
+</body>
+</html>
